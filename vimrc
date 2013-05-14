@@ -330,4 +330,15 @@ set grepprg=grep\ -nH\ $*
 
 let g:tex_flavor='latex'
 
-let g:neocomplcache_enable_at_startup=0
+let g:neocomplcache_enable_at_startup=1
+
+" some added plugins for js.
+let g:html_indent_inctags = "html,body,head,tbody"
+let g:html_indent_script1 = "inc"
+let g:html_indent_style1 = "inc"
+
+autocmd FileType javascript setlocal omnifunc=jscomplete#CompleteJS
+
+
+let g:jscomplete_use = ['dom', 'moz']
+
