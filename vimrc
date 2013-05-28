@@ -342,3 +342,19 @@ autocmd FileType javascript setlocal omnifunc=jscomplete#CompleteJS
 
 let g:jscomplete_use = ['dom', 'moz']
 
+" added the zhongwen input methods
+:let g:vimim_map='c-bslash'
+:let g:vimim_map='m-space'
+:let g:vimim_map='c-space'
+:let g:vimim_map='no-search'
+:let g:vimim_map='no-gi'
+:let g:vimim_map='tab_as_gi'
+:let g:vimim_map='tab_as_onekey'
+
+" add zhongwen xianshi
+
+set fileencodings=utf-8-bom,ucs-bom,utf-8,cp936,gb18030,ucs,big5
+" set fileencodings=gb2312,gb18030,utf-8
+" set termencoding=utf-8
+" set encoding=prc 
+
